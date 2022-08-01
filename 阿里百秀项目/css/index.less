@@ -1,0 +1,192 @@
+/* 根据设计稿 修改container的最大宽度为1280  */
+@media screen and (min-width:1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+a {
+    text-decoration: none ;
+    color: #666;
+}
+a:hover {
+    text-decoration: none;
+}
+// 左侧导航栏模块
+.logo {
+    background-color: #429ad9;
+}
+header {
+    padding-left: 0 !important;
+}
+.logo{
+    img {
+        display: block;
+        // logo图片不缩放
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    span {
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+.nav {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+}
+// 进入ipad或手机屏幕时 li浮动起来宽度为20%
+@media screen and (max-width:991px) {
+    .nav  li {
+        float: left ;
+        width: 20% ;
+        
+    }
+    header {
+        margin-bottom: 10px;
+    }
+}
+// 手机屏幕时字体变小
+@media screen and (max-width:767px) {
+    .nav li a{
+        font-size: 12px;
+        padding: 0;
+        
+    }
+}
+.nav a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 40px;
+    font-size: 16px;
+    &::before {
+        vertical-align:top;
+        margin-right: 5px;
+  
+    }
+}
+.nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+// 新闻模块
+.news {
+    li {
+        float: left;
+        width: 25%;
+        height: 128px;
+        padding-right: 10px;
+
+    }
+    a {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        .one {
+            position: absolute;
+            background-color: rgba(0, 0, 0, .3);
+            color: #fff;
+            width: 100%;
+            height: 41px;
+            font-size: 24px;
+            padding-left: 20px;
+            line-height: 41px;
+            left: 0;
+            top: 214px;
+        }
+        p {
+            position: absolute;
+            background-color: rgba(0, 0, 0, .3);
+            color: #fff;
+            width: 100%;
+            left: 0;
+            top: 108px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            
+        }
+    }
+    li:nth-child(1) {
+        width: 50%;
+        height: 256px;
+        img {
+            width: 100%;
+            height: 256px;
+        }
+    }
+    li:nth-child(4),li:nth-child(5) {
+        padding-top: 10px;
+        a {
+            height: 100%;
+            p {
+                position: absolute;
+                top: 99px ;
+            }
+        }
+    }
+    
+}
+// 当处于手机屏幕时 第一个li 100% 其余50%
+@media screen and (max-width:767px) {
+    .news li:nth-child(1) {
+        width: 100%;
+        
+    }
+    .news li {
+        width: 50%;
+        
+    }
+    .publish {
+        margin-bottom: 10px;
+        h3 {
+            font-size: 14px;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
+}
+// 发表模块
+.publish {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    .col-sm-3 img {
+        width: 100%;
+        height: 100%;
+    }
+    .row {
+        border-bottom: 1px solid #ccc;
+    }
+}
+//右侧banner
+.banner img {
+    width: 100%;
+    
+}
+.hot {
+    display: block;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 0 20px 20px;
+    span {
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 12px;
+    }
+}

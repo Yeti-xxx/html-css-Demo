@@ -1,0 +1,100 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.red {
+    color: #c81623;
+}
+
+header {
+    height: 84px;
+    border-bottom: 2px solid #c81623;
+    line-height: 84px;
+}
+
+.registarea {
+    margin-top: 20px;
+    height: 525px;
+    border: 1px solid #ccc;
+
+}
+
+.registarea h3 {
+    padding: 0 10px;
+    height: 42px;
+    background-color: #ececec;
+    border-bottom: 1px solid #ccc;
+    line-height: 42px;
+    font-size: 18px;
+}
+
+.registarea .login {
+
+    float: right;
+    font-size: 14px;
+}
+
+.reg_form {
+    margin: 50px auto 0; 
+    width: 600px;
+    
+    
+}
+
+.reg_form ul li {
+    margin: 30px auto;
+}
+
+.reg_form ul li .inp {
+    margin-left: 15px;
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+
+}
+
+.reg_form ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+.agree {
+    padding-left: 107px;
+}
+
+.agree input {
+    /* 让选框居中对齐 */
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+.getadd {
+    margin: 0 0 70px 115px;
+    width: 200px;
+    height: 34px;
+    background-color: #c81623;
+    color: #fff;
+}
+
+.mod_copyright {
+    text-align: center;
+}
+
+.links {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.links a {
+    margin-left: 3px;
+}
+
+.copyright {
+    line-height: 20px;
+
+}w

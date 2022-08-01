@@ -1,0 +1,173 @@
+/* 根据设计稿 修改container的最大宽度为1280  */
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none ;
+  color: #666;
+}
+a:hover {
+  text-decoration: none;
+}
+.logo {
+  background-color: #429ad9;
+}
+header {
+  padding-left: 0 !important;
+}
+.logo img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.logo span {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+.nav {
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+}
+@media screen and (max-width: 991px) {
+  .nav li {
+    float: left ;
+    width: 20% ;
+  }
+  header {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav li a {
+    font-size: 12px;
+    padding: 0;
+  }
+}
+.nav a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 40px;
+  font-size: 16px;
+}
+.nav a::before {
+  vertical-align: top;
+  margin-right: 5px;
+}
+.nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+.news li {
+  float: left;
+  width: 25%;
+  height: 128px;
+  padding-right: 10px;
+}
+.news a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.news a .one {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  width: 100%;
+  height: 41px;
+  font-size: 24px;
+  padding-left: 20px;
+  line-height: 41px;
+  left: 0;
+  top: 214px;
+}
+.news a p {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  width: 100%;
+  left: 0;
+  top: 108px;
+}
+.news a img {
+  width: 100%;
+  height: 100%;
+}
+.news li:nth-child(1) {
+  width: 50%;
+  height: 256px;
+}
+.news li:nth-child(1) img {
+  width: 100%;
+  height: 256px;
+}
+.news li:nth-child(4),
+.news li:nth-child(5) {
+  padding-top: 10px;
+}
+.news li:nth-child(4) a,
+.news li:nth-child(5) a {
+  height: 100%;
+}
+.news li:nth-child(4) a p,
+.news li:nth-child(5) a p {
+  position: absolute;
+  top: 99px ;
+}
+@media screen and (max-width: 767px) {
+  .news li:nth-child(1) {
+    width: 100%;
+  }
+  .news li {
+    width: 50%;
+  }
+  .publish {
+    margin-bottom: 10px;
+  }
+  .publish h3 {
+    font-size: 14px;
+  }
+  .publish p {
+    font-size: 10px;
+  }
+}
+.publish {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+}
+.publish .col-sm-3 img {
+  width: 100%;
+  height: 100%;
+}
+.publish .row {
+  border-bottom: 1px solid #ccc;
+}
+.banner img {
+  width: 100%;
+}
+.hot {
+  display: block;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 0 20px 20px;
+}
+.hot span {
+  border-radius: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.hot p {
+  font-size: 12px;
+}

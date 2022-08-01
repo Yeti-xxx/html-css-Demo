@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-btn {
+    position: relative;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.search-btn .fa {
+    color: #fff;
+    font: 22px !important;
+    line-height: 64px;
+}
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 1;
+    font-size: 25px;
+    color: #fff;
+    /* 鼠标移入变小手 */
+    cursor: pointer;
+
+
+}
+.search-box {
+    /* display: none; */
+    /* 默认宽度为0 隐藏 */
+    width: 0;
+    height: 50px;
+    display: flex;
+    border-bottom: 3px solid #fff;
+    overflow: hidden;
+    transition: 1.2s;
+
+}   
+.search-box input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    font-size: 22px;
+    text-indent: 8px;
+
+
+}
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, .7);
+
+}
+.search-box .fa {
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    margin-right: -55px;
+    cursor: pointer;
+}
+.contain {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(200deg,#6e86ee,#453c90);
+    /* 将元素切为圆形（30px表半径，50% 50%表示圆心位置） */
+    clip-path: circle(30px at 50% 50%);
+    transition: .6s;
+
+
+}
+#search_btn:checked ~ .search-btn {
+    display: none;
+}
+#search_btn:checked ~ .close-btn {
+    display: block;
+}
+#search_btn:checked ~ .contain {
+    clip-path: circle(100%);
+}
+#search_btn:checked ~ .contain .search-box {
+    width: 400px;
+}
